@@ -1,6 +1,7 @@
 package com.example.insper;
 
 import com.example.insper.BookController;
+import com.example.insper.Book;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;

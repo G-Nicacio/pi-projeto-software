@@ -1,5 +1,8 @@
 package com.example.insper;
 
+import com.example.insper.BookService;
+import com.example.insper.BookRepository;
+import com.example.insper.Book;
 import org.junit.jupiter.api.Test;
 import org.mockito.Mockito;
 import static org.junit.jupiter.api.Assertions.*;
