@@ -20,7 +20,7 @@ public class BookService {
         return bookRepository.findAll();
     }
 
-    public Optional<Book> getBookById(Long id) {
+    public Optional<Book> findBookById(Long id) {
         return bookRepository.findById(id);
     }
 
