@@ -1,7 +1,7 @@
 package com.example.insper;
 
-import com.example.insper.repository.BookRepository;
-import com.example.insper.model.Book;
+import com.example.insper.BookRepository;
+import com.example.insper.Book;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import java.util.List;

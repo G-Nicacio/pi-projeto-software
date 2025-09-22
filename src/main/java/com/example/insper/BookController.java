@@ -1,7 +1,7 @@
 package com.example.insper;
 
-import com.example.insper.model.Book;
-import com.example.insper.repository.BookRepository;
+import com.example.insper.Book;
+import com.example.insper.BookRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
