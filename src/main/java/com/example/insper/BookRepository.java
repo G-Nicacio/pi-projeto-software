@@ -1,4 +1,4 @@
-package com.example.insper.repository;
+package com.example.insper;
 
 import com.example.insper.model.Book;
 import org.springframework.data.jpa.repository.JpaRepository;

@@ -1,4 +1,4 @@
-package com.example.insper.model;
+package com.example.insper;
 
 import jakarta.persistence.*;
 import java.time.LocalDate;

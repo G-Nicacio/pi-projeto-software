@@ -1,4 +1,4 @@
-package com.example.insper.controller;
+package com.example.insper;
 
 import com.example.insper.model.Book;
 import com.example.insper.repository.BookRepository;
