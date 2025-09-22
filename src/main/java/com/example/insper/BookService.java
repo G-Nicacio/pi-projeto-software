@@ -1,17 +1,20 @@
 package com.example.insper;
 
-import com.example.insper.BookRepository;
-import com.example.insper.Book;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import java.util.List;
-import java.util.Optional;
+
 @Service
 public class BookService {
-    @Autowired
-    private BookRepository bookRepository;
 
-    public Book saveBook(Book book) {
+    private final BookRepository bookRepository;
+
+    // Os testes instanciam new BookService(repo)
+    public BookService(BookRepository bookRepository) {
+        this.bookRepository = bookRepository;
+    }
+
+    // Os testes chamam addBook(Book)
+    public Book addBook(Book book) {
         book.setDataCadastro(java.time.LocalDate.now());
         return bookRepository.save(book);
     }
@@ -20,8 +23,9 @@ public class BookService {
         return bookRepository.findAll();
     }
 
-    public Optional<Book> findBookById(Long id) {
-        return bookRepository.findById(id);
+    // Os testes esperam Book (não Optional) e assinatura (long)
+    public Book findBookById(long id) {
+        return bookRepository.findById(id).orElse(null);
     }
 
     public void deleteBook(Long id) {
