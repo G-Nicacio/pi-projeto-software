@@ -54,5 +54,5 @@ jobs:
         script: |
           docker stop prova
           docker rm --force prova
-          docker run -d -p 8080:8080 --network=rede --name prova danieljuhokim/prova-ci:${{ github.sha }}
+          docker run -d -p 8080:8080 --network=rede --name prova gunicacio/prova-ci:${{ github.sha }}
           
